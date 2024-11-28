@@ -11,7 +11,6 @@ import {
   Wifi,
 } from "lucide-react";
 import Link from "next/link";
-import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 

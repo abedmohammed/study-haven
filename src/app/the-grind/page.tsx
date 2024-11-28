@@ -23,7 +23,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
-import { CornerDownLeft, Heart, Plus, Star, icons } from "lucide-react";
+import { CornerDownLeft, Heart, Plus, Star } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

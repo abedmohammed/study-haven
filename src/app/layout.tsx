@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Eczar } from "next/font/google";
 import "./globals.css";
-import Phone from "@/components/phone";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const eczar = Eczar({ subsets: ["latin"], variable: "--font-eczar" });

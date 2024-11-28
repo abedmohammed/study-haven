@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Card } from "./ui/card";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 type props = {

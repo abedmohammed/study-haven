@@ -12,7 +12,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
-import { Textarea } from "./ui/textarea";
 import { useState } from "react";
 
 type props = {
@@ -28,7 +27,6 @@ export default function Promo({
   type,
   title,
   description,
-  image,
   date,
   location,
 }: props) {

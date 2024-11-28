@@ -2,7 +2,6 @@ import { MultiCarousel } from "@/components/multi-carousel";
 import Phone from "@/components/phone";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { BatteryFull, SignalHigh, Wifi } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

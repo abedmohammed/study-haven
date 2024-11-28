@@ -8,15 +8,12 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
-import { ChevronDown, ChevronUp, MapPin } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -241,7 +238,7 @@ export default function MapPage() {
           )}
         >
           {spots
-            .filter((spot, index) => {
+            .filter((spot) => {
               if (openSelected && !spot.open) return false;
               if (coffeeSelected && !spot.coffee) return false;
               if (foodSelected && !spot.food) return false;

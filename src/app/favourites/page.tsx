@@ -12,7 +12,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
-import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
 export default function FavouritesPage() {
@@ -138,7 +137,7 @@ export default function FavouritesPage() {
 
         <div className={cn(`p-2 flex flex-col gap-4`)}>
           {spots
-            .filter((spot, index) => {
+            .filter((spot) => {
               if (openSelected && !spot.open) return false;
               if (coffeeSelected && !spot.coffee) return false;
               if (foodSelected && !spot.food) return false;
