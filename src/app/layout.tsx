@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
+import { Inter, Eczar } from "next/font/google";
 import "./globals.css";
+import Phone from "@/components/phone";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const eczar = Eczar({ subsets: ["latin"], variable: "--font-eczar" });
 
 export const metadata: Metadata = {
   title: "Study Haven",
@@ -13,8 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`antialiased`}>{children}</body>
+    <html lang="en" className="">
+      <body
+        className={`${inter.variable} ${eczar.variable} font-inter antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
