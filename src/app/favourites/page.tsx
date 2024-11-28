@@ -136,7 +136,7 @@ export default function FavouritesPage() {
           </DropdownMenu>
         </div>
 
-        <div className={cn(`mt-2 p-2 flex flex-col gap-4`)}>
+        <div className={cn(`p-2 flex flex-col gap-4`)}>
           {spots
             .filter((spot, index) => {
               if (openSelected && !spot.open) return false;

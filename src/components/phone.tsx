@@ -46,7 +46,6 @@ export default function Phone({ children }: props) {
     {
       name: "Profile",
       icon: <CircleUserRound size={30} />,
-      link: "/profile",
     },
   ];
 
@@ -78,7 +77,7 @@ export default function Phone({ children }: props) {
               {navItems.map((item, index) => (
                 <Link
                   key={index}
-                  href={item.link}
+                  href={item.link ? item.link : ""}
                   className="flex flex-col justify-center items-center relative"
                 >
                   <div
