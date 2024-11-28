@@ -60,7 +60,7 @@ export default function HomePage() {
                 />
               </div>
               <div className="relative z-10 p-8 flex items-center h-full gap-8">
-                <Link href="/favourites">
+                <Link href="/promos">
                   <Button className="w-full" variant={"outline"}>
                     Discounts
                   </Button>

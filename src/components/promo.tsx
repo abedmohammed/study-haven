@@ -36,7 +36,7 @@ export default function Promo({
   const [actuallyShowQR, setActuallyShowQR] = useState(false);
 
   return type === "event" ? (
-    <Card className="hover:-translate-y-1 transition-all cursor-pointer">
+    <Card>
       <CardContent className="flex items-center py-2 px-4">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-2 relative">
