@@ -84,7 +84,9 @@ export default function Phone({ children }: props) {
                   <div
                     className={cn(
                       "h-full",
-                      path === item.link ? "" : "text-border"
+                      path === item.link
+                        ? "text-[#c07224] border-[#ce761e] pb-1 border-b-2"
+                        : "text-border"
                     )}
                   >
                     {item.icon}
