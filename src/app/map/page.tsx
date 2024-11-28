@@ -1,6 +1,7 @@
 "use client";
 
 import Phone from "@/components/phone";
+import Pin from "@/components/pin";
 import Spot from "@/components/spot";
 import { Button } from "@/components/ui/button";
 import {
@@ -15,7 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, MapPin } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -155,7 +156,7 @@ export default function MapPage() {
     <Phone>
       <div
         className={cn(
-          `h-[350px] rounded-t-lg overflow-hidden border-b`,
+          `h-[350px] rounded-t-lg overflow-hidden border-b relative`,
           expand && "h-[100px]"
         )}
       >
@@ -166,6 +167,10 @@ export default function MapPage() {
           className="object-cover w-full h-full"
           alt="map"
         />
+        <Pin link="/the-grind" top={10} left={80} />
+        <Pin link="/the-grind" top={40} left={20} />
+        <Pin link="/the-grind" top={70} left={60} />
+        <Pin link="/the-grind" top={20} left={10} />
       </div>
       <div className="relative flex flex-col">
         <div
