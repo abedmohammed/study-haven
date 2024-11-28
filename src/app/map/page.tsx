@@ -231,8 +231,8 @@ export default function MapPage() {
 
         <div
           className={cn(
-            `mt-2 p-2 flex flex-col gap-4 h-[200px] overflow-y-scroll`,
-            expand && "h-[450px]"
+            `mt-2 p-2 flex flex-col gap-4 h-[185px] overflow-y-scroll`,
+            expand && "h-[435px]"
           )}
         >
           {spots

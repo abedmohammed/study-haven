@@ -31,7 +31,7 @@ export default function Spot({
     <Card
       className="p-4 cursor-pointer hover:-translate-y-1 transition-all hover:bg-background"
       onClick={() => {
-        router.push("/spots/the-grind");
+        router.push("/the-grind");
       }}
     >
       <div className="flex items-center justify-between gap-4">
